@@ -23,13 +23,14 @@ buttonCreateGrid.addEventListener('click', () => {
     //add event listener for each square that changes to black on mouse enter
     let gridSquares = document.querySelectorAll('.grid-square');
     gridSquares.forEach(square => square.addEventListener('mouseenter', (event) => {
-        event.target.classList.add('background-black');
+        event.target.style.backgroundColor = 'black';
+        event.target.style.opacity = Number(event.target.style.opacity) + 0.1;
     }))    
     //reset input value
     inputCreateGrid.value = '';
     //set grid border
     container.classList.add('border-black');
-
-    inputCreateGrid.focus();
+    //disable button
+    buttonCreateGrid.disabled = true;
 })
 

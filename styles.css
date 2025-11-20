@@ -8,7 +8,7 @@ div.button-container {
 }
 
 button#create-grid {
-    width: 200px;
+    width: 150px;
     height: 30px;
     margin: 15px;
 }
@@ -26,7 +26,7 @@ div.container {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 100px auto;
+    margin: 50px auto;
     width: 600px;
     height: 600px;
 }
@@ -34,10 +34,8 @@ div.container {
 div.grid-square {
     box-sizing: border-box;
     border: solid 0.2px white;
-}
-
-.background-black {
-    background-color: black;
+    opacity: 0.5;
+    transition: background-color 0.15s;
 }
 
 .border-black {

@@ -34,7 +34,7 @@ div.container {
 div.grid-square {
     box-sizing: border-box;
     border: solid 0.2px white;
-    opacity: 0.5;
+    opacity: 0;
     transition: background-color 0.15s;
 }
 

@@ -3,7 +3,7 @@ function createGrid(number) {
     for (let i = 0; i < (number * number); i++) {
         let gridSquare = document.createElement('div');
         gridSquare.classList.add('grid-square');
-
+        gridSquare.style.backgroundColor = 'rgb(' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ')'
         //calculate height and width
         gridSquare.style.height = container.clientHeight / number + 'px';
         gridSquare.style.width = container.clientWidth / number + 'px';
@@ -23,8 +23,8 @@ buttonCreateGrid.addEventListener('click', () => {
     //add event listener for each square that changes to black on mouse enter
     let gridSquares = document.querySelectorAll('.grid-square');
     gridSquares.forEach(square => square.addEventListener('mouseenter', (event) => {
-        event.target.style.backgroundColor = 'black';
-        event.target.style.opacity = Number(event.target.style.opacity) + 0.1;
+        // event.target.style.backgroundColor = 'black';
+        event.target.style.opacity = Number(event.target.style.opacity) + 0.2;
     }))    
     //reset input value
     inputCreateGrid.value = '';

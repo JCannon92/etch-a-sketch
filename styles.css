@@ -1,0 +1,20 @@
+div.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 416px;
+    border: solid 2px black;
+
+}
+
+div.grid-square {
+    width: 100px;
+    height: 100px;
+    border: solid 1px white;
+}
+
+div.grid-square.black {
+    background-color: black;
+}

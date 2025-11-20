@@ -17,7 +17,6 @@ input#create-grid {
     width: 100px;
     margin: 30px 15px;
     text-align: center;
-    
 }
 
 
@@ -28,7 +27,6 @@ div.container {
     align-items: center;
     margin: auto;
     width: 900px;
-    border: solid 2px black;
 }
 
 div.grid-square {
@@ -40,7 +38,6 @@ div.grid-square {
 .background-black {
     background-color: black;
 }
-
 
 .border-black {
     border: solid 2px black;
